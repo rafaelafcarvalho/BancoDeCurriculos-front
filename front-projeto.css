@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0; 
+    /*box-sizing: border-box;*/
+    background-color: rgb(255, 255, 255);   
+}
+ #titulo {
+    color: #018878;
+    font-family:'Poppins', sans-serif;
+    margin-left: 7%;
+    padding: 5px;
+    /*box-shadow: 1px 1px 10px 1px #389186*/
+}
+#subtitulo {
+    color: #018878;
+    font-family:'Poppins', sans-serif;
+    margin-left: 10%;
+    padding: 5px;
+}
+fieldset {
+    border:0;
+}
+body{
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    color:rgb(39, 82, 83);
+    margin-left: auto;
+    margin-top: 1%;
+    justify-content:center;
+
+}
+input, select, button {
+        border-radius: 5px;
+}
+.campo  {
+    margin-bottom: 1em;
+}
+.campo label {
+    margin-bottom: a;
+    color:rgb(39, 82, 83);
+    display: block;
+}
+.campo input[type="text"], .campo input[type="date"], .campo select, .campo input[type="number"], .campo input[type="tel"], .campo input[type="email"] {
+    padding: 0,2em;
+    border: 1px solid rgb(24, 132, 151);
+    box-shadow: 1px 1px 1px;
+    display: block;
+}
+.campo select option{
+    padding-right: 1em;
+}
+.campo input:focus, .campo select:focus {
+    background: rgb(160, 202, 202);
+}
+button {
+    font-weight: 600;
+    color: rgb(255, 248, 220); 
+    background: rgba(6, 49, 35, 0.521);
+    transition: 400ms;
+    border:none;
+    padding:4px 15px;
+    padding: 0,1em 0,5em;
+    width: auto;
+    cursor: pointer;    
+}
+.botao:hover {
+    background: rgb(15, 195, 219);
+    box-shadow: inset 2px 2px 2px thistle;
+    text-shadow: none;
+}
+#check {
+    display:inline-block;
+    justify-content: center;
+    text-align: center;
+    margin-left: 80px;
+    margin-top: 10px;
+
+}

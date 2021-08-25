@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" 
+    crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,200;1,300;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="front-projeto.css">
+    <title>Banco de Currículos JobsNET</title>
+</head>
+<body>
+        <div>
+            <h1 id="titulo">Cadastro de Currículos JobsNET</h1>
+            <p id="subtitulo">Complete suas informações</p>
+        </div>
+        <div>
+        <h2 id="secao1">Dados Pessoais</h2>
+        </div>
+        
+        <form action="" autocomplete="on">
+            <fieldset class="grupo">            
+                <div id="check">
+                    <label for="nome">Nome Completo:</label><br>
+                    <input type="text" id="nome" name="nome" placeholder="Insira seu nome completo" required><br>
+                </div>
+
+                <div id="check">
+                    <label for="cargo">Profissão:</label><br>
+                    <input type="text" id="cargo" name="cargo" required><br>
+                </div>
+
+                <div id="check">
+                    <label for="dNasc">Data de Nascimento:</label><br>
+                    <input type="date" id="dNasc" required><br>
+                </div>
+
+                <div id="check">
+                    <label for="eCivil">Estado Civil:</label><br>
+                        <select id="eCivil" name="eCivil">
+                            <option>-----</option>
+                            <option>Solteiro(a)</option>
+                            <option>Casado(a)</option>
+                            <option>União estável</option>
+                            <option>Divorciado(a)</option>
+                            <option>Viúvo(a)</option>
+                        </select><br>
+                </div>
+
+                <div id="check">
+                    <label for="sexo">Sexo:</label><br>
+                        <select id="sexo" name="sexo">
+                            <option>-----</option>
+                            <option>Feminino</option>
+                            <option>Masculino</option>
+                            <option>Prefiro não declarar</option>
+                        </select><br>
+                </div>
+                
+                <div id="check">
+                    <label for="cep">CEP:</label><br>
+                    <input type="text" id="cep" name="cep" required><br>
+                </div>
+                    
+                <div id="check">
+                    <label for="logradouro">Logradouro:</label><br>
+                    <input type="text" id="logradouro" name="logradouro" placeholder="ex: Nome da rua, Bloco 5, APT 213"><br>
+                </div>
+
+                <div id="check">
+                    <label for="complemento">N°:</label><br>
+                    <input type="text" id="complemento" name="complemento"><br>
+                </div>
+
+                <div id="check">
+                    <label for="bairro">Bairro:</label><br>
+                    <input type="text" id="bairro" name="bairro"><br>
+                </div>
+
+                <div id="check">
+                    <label for="localidade">Cidade:</label><br>
+                    <input type="text" id="localidade" name="localidade" ><br>
+                </div>
+
+                <div id="check">
+                    <label for="uf">UF:</label><br>
+                    <input type="text" id="uf" name="uf" ><br>
+                </div>
+
+                <div id="check">
+                    <label for="tel1">Telefone Fixo 1:</label><br>
+                    <input type="tel" id="tel1" name="tel1" ><br>
+                </div>
+
+                <div id="check">
+                    <label for="tel2">Telefone fixo 2:</label><br>
+                    <input type="tel" id="tel2" name="tel2" ><br>
+                </div>
+                
+                <div id="check">
+                    <label for="cel">Celular:</label><br>
+                    <input type="tel" id="cel" name="cel" ><br>
+                </div>
+                
+                <div id="check">
+                    <label for="contato">Contato:</label><br>
+                    <input type="text" id="contato" name="contato"><br>
+                </div>
+
+                <div id="check"> 
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" placeholder="meunome@exemplo.com" ><br>
+                </div>
+
+            <div>
+                <h2 id="secao2">DOCUMENTOS</h2><br>
+            </div>
+
+                <div id="check">
+                    <label for="ident">Identidade:</label><br>
+                    <input type="text" id="ident" name="ident" ><br>
+                </div>
+
+                <div id="check">
+                    <label for="cpf">CPF:</label><br>
+                    <input type="text" id="cpf" name="cpf" maxlength="11" ><br>
+                </div>
+
+                <div id="check">
+                    <label for="veiculo">Possui veículos:</label><br>
+                    <select id="veiculo" name="veiculo">
+                        <option>-----</option>
+                        <option>Possuo</option>
+                        <option>Não possuo</option>
+                    </select><br>
+                </div>
+
+                <div id="check">
+                    <label for="hab">Habilitação:</label><br>
+                    <select id="hab" name="hab">
+                        <option>-----</option>
+                        <option>A</option>
+                        <option>B</option>
+                        <option>AB</option>
+                        <option>C</option>
+                        <option>D</option>
+                    </select><br>
+                </div>
+            </fieldset>
+        <input type="button" onclick="enviar()" value="Enviar">
+    </form>
+    
+    <script>
+
+        const cep = document.getElementById("cep");
+        cep.addEventListener("blur", (e) => {
+            let Cep = document.getElementById("cep").value;
+            let search = cep.value.replace("-", "")
+            fetch(`https://viacep.com.br/ws/${search}/json/`).then((response) => {
+                response.json().then(data => {
+                    console.log(data)
+                    document.getElementById("logradouro").value = data.logradouro;
+                    document.getElementById("complemento").value = data.complemento;
+                    document.getElementById("bairro").value = data.bairro;
+                    document.getElementById("localidade").value = data.localidade;
+                    document.getElementById("uf").value = data.uf;
+                })
+            })
+
+        })
+
+        function enviar() {
+            let logradouro = document.getElementById("logradouro").value;
+            let complemento = document.getElementById("complemento").value;
+            let bairro = document.getElementById("bairro").value;
+            let localidade = document.getElementById("localidade").value;
+            let uf = document.getElementById("uf").value;
+
+            let json = {
+                "bairro": bairro,
+                "localidade": localidade,
+                "complemento": complemento,
+                "logradouro": logradouro,
+                "uf": uf
+            }
+            console.log(json)
+
+        };
+    </script>
+</body>
+</html>

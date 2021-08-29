@@ -1,0 +1,56 @@
+{
+    "openapi": "3.0.0",
+
+    "info": {
+        "title": "API do Banco de Currículos",
+        "description": "Api do Banco de Currículos JobsNet",
+        "version": "0.0.1"
+    },
+
+    "servers": [
+        {
+            "url": "https://localhost:7070",
+            "description": "ambiente de desenvolvimento"
+        }
+    ],
+    "paths":{
+        "/register":{
+            "post": {
+                "summary": "Cadastro de Candidatos",
+                "description": "Rota de cadastro dos usuários, recebe:nome, gênero, data de nascimento, email e cep",
+                "tags": ["Candidato"],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "gender": {
+                                        "type": "string"
+                                    },
+                                    "cep": {
+                                        "type": "string"
+                                    }
+                                }
+
+                            },
+                            "examples": {
+                                "eu":{
+                                    "value": {
+                                        "name": "Rafaela",
+                                        "gender": "Femino cis",
+                                        "cep": "88888-888"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            
+            }
+
+        }
+    }
+}

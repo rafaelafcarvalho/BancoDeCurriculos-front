@@ -17,40 +17,106 @@
         "/register":{
             "post": {
                 "summary": "Cadastro de Candidatos",
-                "description": "Rota de cadastro dos usuários, recebe:nome, gênero, data de nascimento, email e cep",
+                "description": "Rota de cadastro dos usuários, recebe:nome, profissão, data de nascimento, gênero, cep, logradouro, número, bairro, cidade, estado, telefone fixo 1, telefone fixo 2, contato, celular, identidade, cpf, possui veículos e CNH.",
                 "tags": ["Candidato"],
                 "requestBody": {
                     "content": {
                         "application/json": {
                             "schema": {
                                 "properties": {
-                                    "name": {
+                                    "nome": {
                                         "type": "string"
                                     },
-                                    "gender": {
+                                    "profissao": {
                                         "type": "string"
                                     },
+                                    "datadenascimento": {
+                                        "type": "string"
+                                    },
+                                    "estadocivil": {
+                                        "type": "string"
+                                    },
+                                    "genero": {
+                                        "type": "string"
+                                    },                                    
                                     "cep": {
+                                        "type": "string"
+                                    },
+                                    "logradouro": {
+                                        "type": "string"
+                                    },
+                                    "numero": {
+                                        "type": "string"
+                                    },                                    
+                                    "bairro": {
+                                        "type": "string"
+                                    },
+                                    "cidade": {
+                                        "type": "string"
+                                    },
+                                    "estado": {
+                                        "type": "string"
+                                    },                                    
+                                    "telefone1": {
+                                        "type": "string"
+                                    },
+                                    "telefone2": {
+                                        "type": "string"
+                                    },
+                                    "celular": {
+                                        "type": "string"
+                                    },                                    
+                                    "contato": {
+                                        "type": "string"
+                                    },
+                                    "email": {
+                                        "type": "string"
+                                    },
+                                    "identidade": {
+                                        "type": "string"
+                                    },                                    
+                                    "cpf": {
+                                        "type": "string"
+                                    },
+                                    "veiculo": {
+                                        "type": "string"
+                                    },
+                                    "habilitacao": {
                                         "type": "string"
                                     }
                                 }
-
                             },
                             "examples": {
-                                "eu":{
+                                "User":{
                                     "value": {
-                                        "name": "Rafaela",
-                                        "gender": "Femino cis",
-                                        "cep": "88888-888"
+                                        "nome": "Maria Eduarda",
+                                        "profissao": "Dev Back-end",
+                                        "datadenascimento": "20/09/1997",
+                                        "estadocivil": "solteiro(a)",
+                                        "genero": "Femino",
+                                        "cep": "50010030",
+                                        "logradouro": "Rua Frei Vicente do Salvador",
+                                        "numero": "-",
+                                        "bairro": "Santo Antônio",
+                                        "cidade": "Recife",
+                                        "estado": "PE",
+                                        "telefone1": "81 30323032",
+                                        "telefone2" : "81 30333033",
+                                        "celular": "81 999999999",
+                                        "contato": "claúdia",
+                                        "email": "maria@email.com",
+                                        "identidade": "8888888",
+                                        "cpf": "52998224725",
+                                        "veiculo": "possuo",
+                                        "habilitacao": "A"}
                                     }
                                 }
                             }
                         }
                     }
+                
                 }
-            
+    
             }
-
         }
     }
-}

@@ -1,0 +1,63 @@
+* {
+  padding: 0px;
+  margin: 0px; 
+  box-sizing: border-box;
+}
+.logo{
+  background-image:url("../img/JobsNet.png");
+  background-size:100%;
+  background-repeat: no-repeat;
+  height: 23em;
+}
+.titulo {
+  color: #000000;
+  font-family:'Poppins', sans-serif;
+  padding: 1em;
+  text-align:center;
+}
+header{
+  background-color: #E8E8E8;
+  justify-content: center;
+}
+#check {
+  justify-content: space-around;
+  margin-top: 2%;
+  padding: 3px;
+}
+.grupo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  color:rgb(0, 0, 0);
+}
+.formclass {
+
+  margin-left: 15%;
+  margin-right: 15%;
+}
+h2{
+  text-align: center;
+}
+#box {
+  float: right;
+  margin-left: 5%;
+  width: 20rem;
+  background-color: rgb(255, 255, 255);
+}
+button {
+  width: auto;
+  margin-left: 47%;
+  margin-right: 53%;
+  padding: 4px 15px;
+  font-size: 20px;
+  color:#94b18c88 ;
+  background:#29213B ; 
+  font-weight: 600px;
+  transition: 400ms;
+  border:none;
+  cursor: pointer;    
+  transition: 400ms;
+}
+button:hover{
+  background-color: #61796e88 ;
+  color: rgb(0, 0, 0);
+}

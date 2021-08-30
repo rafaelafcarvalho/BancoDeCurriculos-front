@@ -1,6 +1,9 @@
 # Desafio Gama Academy Banco de Currículos
+Link documentação dos recursos Web Services REST: https://api-bancodecurriculos.herokuapp.com/docs/
 
+Link da Landing page: https://bancodecurriculos.herokuapp.com/
 
+*Obs.: Em caso de erro é necessário a instalação da extensão Moesif Origin devido a um problema com CORS*
 ## Proposta
 Desenvolver uma página para atração de profissionais para conectar as oportunidades de emprego.
 
@@ -32,7 +35,7 @@ Não pode haver 2 cadastros de candidatos com o mesmo cpf;
 
 Todo candidato precisará preencher os campos: CPF, Nome, Data Nascimento, Cep, Logradouro, Número, Bairro, Cidade, Email, Profissão e Celular;
 
-Integração entre a Página de Formulário e o Back-end;
+#### Integração entre a Página de Formulário e o Back-end;
 
 Disponibilizar uma API Rest com a funcionalidade de cadastro de candidatos armazenando em um banco de dados;
 
